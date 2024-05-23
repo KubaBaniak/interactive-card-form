@@ -1,0 +1,88 @@
+@import '../../global.scss';
+
+.card-front {
+  z-index: 42;
+  position: absolute;
+  top: 15%;
+  left: 13%;
+  background-image: url('../../assets/images/bg-card-front.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 447px;
+  height: 245px;
+  max-height: 70%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  box-sizing: border-box;
+  color: $White;
+
+
+  img {
+    width: 84px;
+    height: auto;
+  }
+
+  .card-number {
+    margin-top: 30px;
+    font-size: 26px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+  }
+
+  .inline-card-data {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card-front {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1.82;
+    top: 45%;
+    left: 5%;
+    transform: none;
+
+    .card-number {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card-front {
+    padding: 15px;
+
+    .card-number {
+      margin-top: 10px;
+      font-size: 13px;
+      word-spacing: 1px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card-front {
+    padding: 10px;
+
+    img {
+      width: 40px;
+      height: auto;
+    }
+
+    .card-number {
+      margin-top: 10px;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    .inline-card-data {
+      font-size: 11px;
+    }
+  }
+}

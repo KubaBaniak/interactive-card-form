@@ -1,0 +1,35 @@
+@import '../../global.scss';
+
+.card-back {
+  position: relative;
+  top: 50%;
+  left: 33%;
+  background-image: url('../../assets/images/bg-card-back.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 447px;
+  height: 245px;
+  max-height: 70%;
+  border-radius: 2.5%;
+
+  span {
+    position: relative;
+    top: 45%;
+    left: 80%;
+    letter-spacing: 2px;
+    color: $White;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card-back {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1.82;
+    top: 5%;
+    left: 40%;
+    transform: none;
+  }
+}
